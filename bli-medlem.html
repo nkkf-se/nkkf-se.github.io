@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bli medlem eller kontakta oss – Nynäshamns Kinesiska Kulturförening</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./">Nynäshamns Kinesiska Kulturförening</a>
+      <nav>
+        <a href="./">Hem</a>
+        <a href="stadgar.html">Stadgar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Bli medlem eller kontakta oss</h1>
+    <p>Fyll i formuläret för att ansöka om medlemskap eller skicka ett meddelande till föreningen. Vid medlemsansökan kontaktar vi dig med information om medlemsavgift och betalning.</p>
+    <p>Du kan också nå oss via vår <a href="https://www.facebook.com/profile.php?id=61587108373222">Facebook-sida</a> eller på e-post <a href="mailto:admin@nkkf.se">admin@nkkf.se</a>.</p>
+
+    <form class="card form" action="https://formsubmit.co/admin@nkkf.se" method="POST">
+      <input type="hidden" name="_subject" value="Nytt meddelande från nkkf.se">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://nkkf.se/tack.html">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset>
+        <legend>Ärende *</legend>
+        <label class="check"><input type="radio" name="Ärende" value="Medlemsansökan" checked required> Jag vill bli medlem</label>
+        <label class="check"><input type="radio" name="Ärende" value="Kontakt / fråga"> Jag har en fråga eller vill kontakta er</label>
+      </fieldset>
+
+      <label>Namn *
+        <input type="text" name="Namn" autocomplete="name" required>
+      </label>
+      <label>E-post *
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>Telefon
+        <input type="tel" name="Telefon" autocomplete="tel">
+      </label>
+      <label>Adress
+        <input type="text" name="Adress" autocomplete="street-address" placeholder="Gata, postnummer, ort">
+      </label>
+      <label>Meddelande
+        <textarea name="Meddelande" rows="4" placeholder="Berätta gärna vad du är intresserad av"></textarea>
+      </label>
+      <label class="check">
+        <input type="checkbox" name="Samtycke" value="Ja" required>
+        Jag godkänner att föreningen sparar mina uppgifter för att hantera min ansökan eller mitt ärende. *
+      </label>
+      <button type="submit">Skicka</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © Nynäshamns Kinesiska Kulturförening · Säte: Nynäshamns kommun ·
+      <a href="mailto:admin@nkkf.se">admin@nkkf.se</a> ·
+      <a href="https://www.facebook.com/profile.php?id=61587108373222">Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>
